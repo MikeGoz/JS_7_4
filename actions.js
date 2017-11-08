@@ -29,15 +29,13 @@ function removeComment(id) {
 function thumbUpComment(id) {
   return {
       type: THUMB_UP_COMMENT,
-      id: id,
-      img_src = ''
+      id: id      
   }
 }
 function thumDownComment(id) {
   return {
       type: THUMB_DOWN_COMMENT,
-      id: id,
-      img_src = ''
+      id: id
   }
 }
 const boundAddComment = text => dispatch(addComment(text));
